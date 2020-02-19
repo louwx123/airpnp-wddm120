@@ -104,7 +104,8 @@ app.post("/validation-registration", (req,res)=>{
 
 
 
-const PORT=3000;
-app.listen(3000,()=>{
-    console.log(`Web Server connected!!!`);
-})
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT , ()=>{
+  
+      console.log(`Web Server is up and running`);
+  })
